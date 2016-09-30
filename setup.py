@@ -25,5 +25,4 @@ setup(
   ],
   keywords = 'windowing tk window',
   py_modules = 'npmwin.py',
-  install_requires = ['tkinter', 'datetime'],
 )
