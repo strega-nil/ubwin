@@ -9,6 +9,8 @@ with open(path.join(here, 'README'), encoding = 'utf-8') as f:
 
 setup(
   name = 'npmwin',
+  packages = [''],
+  package_dir={'': 'src'},
   version = '0.1.0',
   description = 'NPM Windowing library',
   long_description = long_description,
@@ -24,5 +26,4 @@ setup(
     'Programming Language :: Python :: 3',
   ],
   keywords = 'windowing tk window',
-  py_modules = 'npmwin.py',
 )
