@@ -1,4 +1,4 @@
-NPM Window Library
+UB Window Library
 ---
 
 An easy-to-use windowing library for Python, based on Tk
@@ -6,13 +6,13 @@ An easy-to-use windowing library for Python, based on Tk
 In order to install, run
 
 ```shell
-pip install git+https://github.com/ubsan/npmwin
+pip install git+https://github.com/ubsan/ubwin
 ```
 
 Then use from your python files by writing:
 
 ```python
-from npmwin import Window
+from ubwin import Window
 
 class Foo(Window):
   def __init__(self, width, height):
