@@ -1,8 +1,8 @@
-import npmwin
+import ubwin
 
-class Window(npmwin.Window):
+class Window(ubwin.Window):
   def __init__(self, width, height, color, trie):
-    npmwin.Window.__init__(
+    ubwin.Window.__init__(
       self,
       width,
       height,
@@ -28,7 +28,7 @@ class Window(npmwin.Window):
     self.win_clear()
     self.win_set_bg(self.color)
 
-    text = npmwin.TextBox(''.join(self.string), 10, 10)
+    text = ubwin.TextBox(''.join(self.string), 10, 10)
     text.draw(self)
 
     self.trie.rebuild(self.string)
@@ -55,7 +55,7 @@ class Trie:
 
     # returns the textbox object
     def draw(self, letter, window, horiz, vert, rec = 0):
-      textbox = npmwin.TextBox(letter, horiz, vert)
+      textbox = ubwin.TextBox(letter, horiz, vert)
       textbox.draw(window)
       width = textbox.width()
       ret = horiz + width + 10

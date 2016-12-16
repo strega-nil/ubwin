@@ -8,13 +8,13 @@ with open(path.join(here, 'README.md'), encoding = 'utf-8') as f:
   long_description = f.read()
 
 setup(
-  name = 'npmwin',
+  name = 'ubwin',
   packages = [''],
   package_dir={'': 'src'},
   version = '0.1.0',
   description = 'NPM Windowing library',
   long_description = long_description,
-  url = 'https://github.com/ubsan/npmwin',
+  url = 'https://github.com/ubsan/ubwin',
   author = 'Nicole Mazzuca',
   author_email = 'npmazzuca@gmail.com',
   license = 'MIT',
